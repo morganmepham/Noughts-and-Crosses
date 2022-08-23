@@ -1,7 +1,11 @@
+html{
+    font-size: 16px;
+}
+
 header{
     background-color: black;
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -23,20 +27,22 @@ body{
 
     text-align: center;
     background-color: blue;
-    height: 100px;
-    width: 200px;
-    border-radius: 10px;
+    height: 5rem;
+    width: 12.5rem;
+    border-radius: 0.625rem;
+    margin-top: 6.25rem;
 }
 #button:active{
-    height: 85px;
-    width: 170px;
+    height: 4.7rem;
+    width: 10.6rem;
 }
 #button:hover{
     background-color: green;
-    transition: background-color 700ms linear;
+    transition: background-color 500ms linear;
 }
 .buttonTxt{
-    margin-top: 33px;
+    margin-top: 1.56rem;
+    
 }
 
 
@@ -45,12 +51,12 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 450px;
-    width: 450px;
-    margin-left: 150px;
+    height: 28.1rem;
+    width: 28.1rem;
+    margin-left: 9.3rem;
 }
 .item{
-    border: 2px solid white;
+    border: 0.125rem solid white;
 }
 
 .grid-item1{
