@@ -1,46 +1,50 @@
 html{
     font-size: 16px;
+    font-family:'Bubblegum Sans', cursive;;
 }
 
 header{
-    background-color: black;
-    color: white;
     font-size: 2rem;
     text-align: center;
 }
 
 body{
-    background-color: black;
+    background-color: darkslategray;
     color: white;
 }
 
 .outer-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr;
     justify-items: center;
     align-items: center;
 }
-
-
-#button{
+.radioButtons{
     grid-column: 2/3;
+    grid-row: 1/2;
+}
 
+
+#resetButton{
+    grid-column: 2/3;
+    grid-row: 3/4;
     text-align: center;
-    background-color: blue;
+    background-color: slateblue;
     height: 5rem;
     width: 12.5rem;
     border-radius: 0.625rem;
-    margin-top: 6.25rem;
+    margin-top: 4.25rem;
 }
-#button:active{
+#resetButton:active{
     height: 4.7rem;
     width: 10.6rem;
 }
-#button:hover{
-    background-color: green;
-    transition: background-color 500ms linear;
+#resetButton:hover{
+    background-color: darkcyan;
+    transition: background-color 300ms linear;
 }
-.buttonTxt{
+.resetButtonTxt{
     margin-top: 1.56rem;
     
 }
@@ -48,15 +52,27 @@ body{
 
 .grid-container{
     grid-column: 1/2;
+    grid-row: 1/5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 28.1rem;
-    width: 28.1rem;
+    height: 25.1rem;
+    width: 25.1rem;
     margin-left: 9.3rem;
 }
 .item{
     border: 0.125rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    height: 8rem;
+    width: 8rem;
+}
+.naught{
+    display: none;
 }
 
 .grid-item1{
@@ -114,4 +130,12 @@ body{
 
     border-right: none;
     border-bottom: none;
+}
+
+
+
+.finalMessage{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
 }
