@@ -36,10 +36,8 @@ function reset(e){
     const board = document.getElementsByClassName('img')
     for(let image of board){
         image.remove()
-        let r = document.querySelectorAll('finalMessage')
         resultDisplay.remove()
         reset()
-        r.remove()
     }
 }
 
